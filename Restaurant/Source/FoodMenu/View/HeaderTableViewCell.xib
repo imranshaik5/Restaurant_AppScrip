@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yW4-TM-rPL" customClass="HeaderTableViewCell" customModule="Restaurant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yW4-TM-rPL" id="aa9-9B-vmp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="4Ck-jT-vY7">
+                        <rect key="frame" x="280" y="8" width="28" height="28"/>
+                        <color key="tintColor" red="0.51764705879999995" green="0.53333333329999999" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="MkG-CH-JK7"/>
+                            <constraint firstAttribute="width" constant="28" id="YNu-Ue-h8T"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mm-fQ-NQW">
+                        <rect key="frame" x="12" y="13" width="40" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voa-Oi-afi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5mm-fQ-NQW" firstAttribute="centerY" secondItem="aa9-9B-vmp" secondAttribute="centerY" id="6Ef-Rz-7Hy"/>
+                    <constraint firstItem="Voa-Oi-afi" firstAttribute="top" secondItem="aa9-9B-vmp" secondAttribute="top" id="Kze-fM-EGX"/>
+                    <constraint firstAttribute="trailing" secondItem="Voa-Oi-afi" secondAttribute="trailing" id="Lez-mS-G5O"/>
+                    <constraint firstItem="4Ck-jT-vY7" firstAttribute="centerY" secondItem="aa9-9B-vmp" secondAttribute="centerY" id="Ovn-43-9Uv"/>
+                    <constraint firstAttribute="bottom" secondItem="Voa-Oi-afi" secondAttribute="bottom" id="Sgf-pd-zW9"/>
+                    <constraint firstItem="5mm-fQ-NQW" firstAttribute="leading" secondItem="aa9-9B-vmp" secondAttribute="leading" constant="12" id="a0d-vs-EHk"/>
+                    <constraint firstAttribute="trailing" secondItem="4Ck-jT-vY7" secondAttribute="trailing" constant="12" id="c6V-UT-eau"/>
+                    <constraint firstItem="Voa-Oi-afi" firstAttribute="leading" secondItem="aa9-9B-vmp" secondAttribute="leading" id="cSz-7f-zXr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="TdB-bQ-L2E"/>
+            <connections>
+                <outlet property="buttonExpandable" destination="Voa-Oi-afi" id="qEd-1V-Jf0"/>
+                <outlet property="titleLabel" destination="5mm-fQ-NQW" id="U0X-qc-1O4"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downArrow" width="32" height="32"/>
+    </resources>
+</document>
